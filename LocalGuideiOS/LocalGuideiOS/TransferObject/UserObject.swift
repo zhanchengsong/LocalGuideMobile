@@ -6,19 +6,12 @@
 //
 
 import Foundation
-class UserObject: Codable {
-    let username: String = ""
-    let password: String = ""
-    let email: String = ""
-    let userId: String = ""
-    let displayName: String = ""
-    
-    // Define the coding keys that are different form the object and json
-    enum CodingKeys: String, CodingKey {
-        case displayName = "displayName"
-        case username 
-        case password
-        case email
-        case userId
-    }
+struct UserObject: Codable {
+    var username: String?
+    var password: String?
+    var email: String?
+    var userId: String?
+    var displayName: String?
+    var jwtToken: String?
+    var refreshToken: String?
 }

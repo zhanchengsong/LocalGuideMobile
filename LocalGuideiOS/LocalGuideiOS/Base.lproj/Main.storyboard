@@ -16,21 +16,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Username" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nK-8z-eWq">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6nK-8z-eWq">
                                 <rect key="frame" x="107" y="431" width="200" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="SX3-S1-yyi"/>
+                                    <constraint firstAttribute="width" constant="200" id="HVb-SO-Rfs"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRR-I5-lYA">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tRR-I5-lYA">
                                 <rect key="frame" x="107" y="485" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="gU5-YF-6zD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="password"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z21-KR-9rk">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z21-KR-9rk">
                                 <rect key="frame" x="167" y="585" width="80" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -41,12 +45,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tRR-I5-lYA" firstAttribute="top" secondItem="6nK-8z-eWq" secondAttribute="bottom" constant="20" id="Y2w-YJ-iYe"/>
-                            <constraint firstItem="6nK-8z-eWq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zqa-DB-Mnv"/>
-                            <constraint firstItem="z21-KR-9rk" firstAttribute="top" secondItem="tRR-I5-lYA" secondAttribute="bottom" constant="66" id="fuJ-CN-c8W"/>
-                            <constraint firstItem="tRR-I5-lYA" firstAttribute="top" secondItem="6nK-8z-eWq" secondAttribute="bottom" constant="20" id="rKp-vw-37u"/>
-                            <constraint firstItem="z21-KR-9rk" firstAttribute="centerX" secondItem="tRR-I5-lYA" secondAttribute="centerX" id="tpQ-Nh-AGm"/>
-                            <constraint firstItem="6nK-8z-eWq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wmB-X1-PTi"/>
+                            <constraint firstItem="tRR-I5-lYA" firstAttribute="centerX" secondItem="6nK-8z-eWq" secondAttribute="centerX" id="7fj-vl-CLY"/>
+                            <constraint firstItem="6nK-8z-eWq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8K1-GF-MFY"/>
+                            <constraint firstItem="6nK-8z-eWq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EQg-dK-eka"/>
+                            <constraint firstItem="tRR-I5-lYA" firstAttribute="top" secondItem="6nK-8z-eWq" secondAttribute="bottom" constant="20" id="VRK-01-Fg4"/>
                         </constraints>
                     </view>
                     <connections>

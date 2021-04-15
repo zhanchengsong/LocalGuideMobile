@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
-    var userStore: UserStore = UserStore()
+    var userService: UserService = UserService.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +21,15 @@ class ViewController: UIViewController {
     
     
     @IBAction func onLoginPress(_ sender: Any) {
-        self.userStore.registerUser(username: username.text!,password: password.text!)
+        self.userService.loginUser(username: username.text!,password: password.text!) { (result) in
+            switch result {
+            case .success(let userObj):
+                print(userObj)
+            case .failure(let error):
+                print(error)
+            }
+            
+        }
     }
     
 

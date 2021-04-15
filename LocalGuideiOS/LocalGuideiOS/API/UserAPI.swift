@@ -32,6 +32,10 @@ struct UserAPI {
         return userURL(endpoint: Endpoint.user)
     }
     
+    static var loginUserUrl: URL {
+        return userURL(endpoint: Endpoint.login)
+    }
+    
     static func parseUser(fromJson data: Data) -> Result<UserObject, Error> {
         do {
             let decoder = JSONDecoder()

@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E3255662628052B00B8BADB /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3255652628052B00B8BADB /* UserService.swift */; };
+		3E3255702628156100B8BADB /* UserCredentialModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E32556E2628156100B8BADB /* UserCredentialModel.xcdatamodeld */; };
 		A2B94DEB26255A010065CE0E /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B94DEA26255A010065CE0E /* UserAPI.swift */; };
-		A2B94DF12626AB950065CE0E /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B94DF02626AB950065CE0E /* UserStore.swift */; };
 		A2B94DFA2626C6E20065CE0E /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B94DF92626C6E20065CE0E /* UserObject.swift */; };
 		A2FEDE062622DA9E00457C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FEDE052622DA9E00457C21 /* AppDelegate.swift */; };
 		A2FEDE082622DA9E00457C21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FEDE072622DA9E00457C21 /* SceneDelegate.swift */; };
@@ -38,8 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E3255652628052B00B8BADB /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		3E32556F2628156100B8BADB /* UserCredentialModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserCredentialModel.xcdatamodel; sourceTree = "<group>"; };
 		A2B94DEA26255A010065CE0E /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
-		A2B94DF02626AB950065CE0E /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
 		A2B94DF92626C6E20065CE0E /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		A2FEDE022622DA9E00457C21 /* LocalGuideiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalGuideiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FEDE052622DA9E00457C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E3255642628051800B8BADB /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				3E3255652628052B00B8BADB /* UserService.swift */,
+			);
+			path = DataService;
+			sourceTree = "<group>";
+		};
+		3E32556D2628154500B8BADB /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3E32556E2628156100B8BADB /* UserCredentialModel.xcdatamodeld */,
+			);
+			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
 		A2B94DE9262559E70065CE0E /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +111,6 @@
 		A2B94DEF2626AB7F0065CE0E /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				A2B94DF02626AB950065CE0E /* UserStore.swift */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -129,6 +146,8 @@
 		A2FEDE042622DA9E00457C21 /* LocalGuideiOS */ = {
 			isa = PBXGroup;
 			children = (
+				3E32556D2628154500B8BADB /* CoreDataModel */,
+				3E3255642628051800B8BADB /* DataService */,
 				A2B94DF82626C6C90065CE0E /* TransferObject */,
 				A2B94DEF2626AB7F0065CE0E /* Store */,
 				A2B94DE9262559E70065CE0E /* API */,
@@ -291,9 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E3255662628052B00B8BADB /* UserService.swift in Sources */,
 				A2FEDE0A2622DA9E00457C21 /* ViewController.swift in Sources */,
-				A2B94DF12626AB950065CE0E /* UserStore.swift in Sources */,
 				A2B94DEB26255A010065CE0E /* UserAPI.swift in Sources */,
+				3E3255702628156100B8BADB /* UserCredentialModel.xcdatamodeld in Sources */,
 				A2FEDE062622DA9E00457C21 /* AppDelegate.swift in Sources */,
 				A2FEDE082622DA9E00457C21 /* SceneDelegate.swift in Sources */,
 				A2B94DFA2626C6E20065CE0E /* UserObject.swift in Sources */,
@@ -623,6 +643,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3E32556E2628156100B8BADB /* UserCredentialModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E32556F2628156100B8BADB /* UserCredentialModel.xcdatamodel */,
+			);
+			currentVersion = 3E32556F2628156100B8BADB /* UserCredentialModel.xcdatamodel */;
+			path = UserCredentialModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A2FEDDFA2622DA9E00457C21 /* Project object */;
 }
