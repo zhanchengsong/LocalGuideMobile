@@ -10,7 +10,7 @@ struct UserObject: Codable {
     var username: String?
     var password: String?
     var email: String?
-    var userId: String?
+    var userId: UUID?
     var displayName: String?
     var jwtToken: String?
     var refreshToken: String?

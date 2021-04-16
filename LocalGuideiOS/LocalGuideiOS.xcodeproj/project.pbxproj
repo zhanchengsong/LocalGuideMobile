@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E196C7226294CFA00EB81C8 /* ContentPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E196C7126294CFA00EB81C8 /* ContentPageViewController.swift */; };
 		3E3255662628052B00B8BADB /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3255652628052B00B8BADB /* UserService.swift */; };
-		3E3255702628156100B8BADB /* UserCredentialModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E32556E2628156100B8BADB /* UserCredentialModel.xcdatamodeld */; };
+		3E3255702628156100B8BADB /* LocalGuideCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E32556E2628156100B8BADB /* LocalGuideCoreData.xcdatamodeld */; };
+		3EDCBD5326293DE200758A22 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCBD5126293DE200758A22 /* User+CoreDataClass.swift */; };
+		3EDCBD5426293DE200758A22 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDCBD5226293DE200758A22 /* User+CoreDataProperties.swift */; };
 		A2B94DEB26255A010065CE0E /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B94DEA26255A010065CE0E /* UserAPI.swift */; };
 		A2B94DFA2626C6E20065CE0E /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B94DF92626C6E20065CE0E /* UserObject.swift */; };
 		A2FEDE062622DA9E00457C21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FEDE052622DA9E00457C21 /* AppDelegate.swift */; };
 		A2FEDE082622DA9E00457C21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FEDE072622DA9E00457C21 /* SceneDelegate.swift */; };
-		A2FEDE0A2622DA9E00457C21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FEDE092622DA9E00457C21 /* ViewController.swift */; };
+		A2FEDE0A2622DA9E00457C21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FEDE092622DA9E00457C21 /* LoginViewController.swift */; };
 		A2FEDE0D2622DA9E00457C21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FEDE0B2622DA9E00457C21 /* Main.storyboard */; };
 		A2FEDE0F2622DA9F00457C21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FEDE0E2622DA9F00457C21 /* Assets.xcassets */; };
 		A2FEDE122622DA9F00457C21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FEDE102622DA9F00457C21 /* LaunchScreen.storyboard */; };
@@ -39,14 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E196C7126294CFA00EB81C8 /* ContentPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentPageViewController.swift; sourceTree = "<group>"; };
 		3E3255652628052B00B8BADB /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		3E32556F2628156100B8BADB /* UserCredentialModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserCredentialModel.xcdatamodel; sourceTree = "<group>"; };
+		3EDCBD5126293DE200758A22 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3EDCBD5226293DE200758A22 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		A2B94DEA26255A010065CE0E /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		A2B94DF92626C6E20065CE0E /* UserObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		A2FEDE022622DA9E00457C21 /* LocalGuideiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocalGuideiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2FEDE052622DA9E00457C21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2FEDE072622DA9E00457C21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A2FEDE092622DA9E00457C21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A2FEDE092622DA9E00457C21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A2FEDE0C2622DA9E00457C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2FEDE0E2622DA9F00457C21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2FEDE112622DA9F00457C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E196C7026294C9200EB81C8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A2FEDE092622DA9E00457C21 /* LoginViewController.swift */,
+				3E196C7126294CFA00EB81C8 /* ContentPageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		3E3255642628051800B8BADB /* DataService */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +110,18 @@
 		3E32556D2628154500B8BADB /* CoreDataModel */ = {
 			isa = PBXGroup;
 			children = (
-				3E32556E2628156100B8BADB /* UserCredentialModel.xcdatamodeld */,
+				3E32556E2628156100B8BADB /* LocalGuideCoreData.xcdatamodeld */,
 			);
 			path = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		3EDCBD5826293DF700758A22 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				3EDCBD5126293DE200758A22 /* User+CoreDataClass.swift */,
+				3EDCBD5226293DE200758A22 /* User+CoreDataProperties.swift */,
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		A2B94DE9262559E70065CE0E /* API */ = {
@@ -146,6 +170,8 @@
 		A2FEDE042622DA9E00457C21 /* LocalGuideiOS */ = {
 			isa = PBXGroup;
 			children = (
+				3E196C7026294C9200EB81C8 /* ViewControllers */,
+				3EDCBD5826293DF700758A22 /* DataModel */,
 				3E32556D2628154500B8BADB /* CoreDataModel */,
 				3E3255642628051800B8BADB /* DataService */,
 				A2B94DF82626C6C90065CE0E /* TransferObject */,
@@ -153,7 +179,6 @@
 				A2B94DE9262559E70065CE0E /* API */,
 				A2FEDE052622DA9E00457C21 /* AppDelegate.swift */,
 				A2FEDE072622DA9E00457C21 /* SceneDelegate.swift */,
-				A2FEDE092622DA9E00457C21 /* ViewController.swift */,
 				A2FEDE0B2622DA9E00457C21 /* Main.storyboard */,
 				A2FEDE0E2622DA9F00457C21 /* Assets.xcassets */,
 				A2FEDE102622DA9F00457C21 /* LaunchScreen.storyboard */,
@@ -311,12 +336,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3255662628052B00B8BADB /* UserService.swift in Sources */,
-				A2FEDE0A2622DA9E00457C21 /* ViewController.swift in Sources */,
+				A2FEDE0A2622DA9E00457C21 /* LoginViewController.swift in Sources */,
 				A2B94DEB26255A010065CE0E /* UserAPI.swift in Sources */,
-				3E3255702628156100B8BADB /* UserCredentialModel.xcdatamodeld in Sources */,
+				3E3255702628156100B8BADB /* LocalGuideCoreData.xcdatamodeld in Sources */,
 				A2FEDE062622DA9E00457C21 /* AppDelegate.swift in Sources */,
+				3E196C7226294CFA00EB81C8 /* ContentPageViewController.swift in Sources */,
 				A2FEDE082622DA9E00457C21 /* SceneDelegate.swift in Sources */,
+				3EDCBD5326293DE200758A22 /* User+CoreDataClass.swift in Sources */,
 				A2B94DFA2626C6E20065CE0E /* UserObject.swift in Sources */,
+				3EDCBD5426293DE200758A22 /* User+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,13 +673,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		3E32556E2628156100B8BADB /* UserCredentialModel.xcdatamodeld */ = {
+		3E32556E2628156100B8BADB /* LocalGuideCoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				3E32556F2628156100B8BADB /* UserCredentialModel.xcdatamodel */,
 			);
 			currentVersion = 3E32556F2628156100B8BADB /* UserCredentialModel.xcdatamodel */;
-			path = UserCredentialModel.xcdatamodeld;
+			path = LocalGuideCoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -12,9 +12,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
     @IBOutlet weak var password: UITextField!
     
-    @IBOutlet weak var displayName: UILabel!
-    @IBOutlet weak var jwtToken: UILabel!
-    
     let context = ( UIApplication.shared.delegate as! AppDelegate ).persistentContainer.viewContext
     var users: [User]?
     
@@ -27,13 +24,20 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "loggedInSegue") {
+            if let destinationVC = segue.destination as? ContentPageViewController {
+                destinationVC.userDisplayName = self.users![0].displayName!
+            }
+        }
+    }
     func fetchUserProfile() {
         do {
             try users = context.fetch(User.fetchRequest())
             DispatchQueue.main.async {
                 if (self.users!.count == 1) {
-                    self.displayName.text = self.users![0].displayName
-                    self.jwtToken.text = self.users![0].jwtToken
+                    self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
+                    
                 }
      
             }
@@ -59,6 +63,7 @@ class LoginViewController: UIViewController {
                 } catch {
                     
                 }
+                self.performSegue(withIdentifier: "loggedInSegue", sender: nil)
             case .failure(let error):
                 print(error)
             }
